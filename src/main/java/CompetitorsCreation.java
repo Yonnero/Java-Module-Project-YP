@@ -27,7 +27,7 @@ public class CompetitorsCreation {
                 if (minSpeed <= speed && speed <= maxSpeed) {
                     return speed;
                 } else {
-                    System.out.println("Скорость выходит из диапозона значений. Повторите попытку...");
+                    System.out.println("Скорость выходит из диапазона значений. Повторите попытку...");
                 }
             } else {
                 System.out.println("Введено недопустимое значение. Повторите попытку...");
