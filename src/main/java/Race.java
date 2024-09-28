@@ -1,8 +1,8 @@
-import java.util.ArrayList;
+import java.util.List;
 
 public class Race {
 
-    public void printWinner(ArrayList<Car> cars) {
+    public void printWinner(List<Car> cars) {
         Car winner = new Car();
         for (Car car : cars) {
             if (winner.getSpeed() <= car.getSpeed()) {

@@ -8,7 +8,7 @@ public class Main {
         System.out.println("*-------------------------------------------------------------------------*\n");
 
         CompetitorsCreation competitorsCreation = new CompetitorsCreation();
-        competitorsCreation.createCompetitors();
+        competitorsCreation.inputCompetitors();
         new Race().printWinner(competitorsCreation.getCars());
     }
 }

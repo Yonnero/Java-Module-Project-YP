@@ -1,14 +1,15 @@
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class CompetitorsCreation {
     private final Scanner scanner = new Scanner(System.in);
-    private final ArrayList<Car> cars = new ArrayList<>();
+    private final List<Car> cars = new ArrayList<>();
     private final int competitors = 3;
     private final int maxSpeed = 250;
     private final int minSpeed = 1;
 
-    void createCompetitors() {
+    void inputCompetitors() {
         while (cars.size() < competitors) {
             int countCar = cars.size() + 1;
             Car car = new Car(nameCar(countCar), checkSpeed(countCar));
@@ -41,7 +42,7 @@ public class CompetitorsCreation {
         return scanner.next();
     }
 
-    ArrayList<Car> getCars() {
+    List<Car> getCars() {
         return cars;
     }
 }
